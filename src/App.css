@@ -1,38 +1,68 @@
-.App {
+
+.app {
   text-align: center;
+  padding: 20px;
+  background-image: url("https://media.istockphoto.com/id/947314334/photo/blue-sky-with-bright-sun.jpg?s=612x612&w=0&k=20&c=XUlLAWDXBLYdTGIl6g_qHQ9IBBw4fBvkVuvL2dmVXQw=");
+  background-size: cover;
+  height: 95vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app.dark-mode {
+  background-image: url("https://media.istockphoto.com/id/2005862422/photo/late-night-dark-mode-view.jpg?s=612x612&w=0&k=20&c=R1lSc6--WWnV0Zyp-Qt4Jrgt40iGCDdjtKBWjnA8674=");
+  color: #fff;
+  background-size: cover;
+  height: 95vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.mode-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.mode-toggle:hover {
+  opacity: 0.7;
+}
+.flex{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.icon{
+  font-size: 35px;
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+  border-radius: 8px;
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  font-size: 30px;
+}
+p{
+  font-weight: 500;
 }
